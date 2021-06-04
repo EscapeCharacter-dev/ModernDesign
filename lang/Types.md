@@ -45,3 +45,28 @@ struct Point3D =    // Point3D is the name of the structure.
     Y -> single,
     Z -> single;
 ```
+## Unions
+Unions can be used in Modern.
+Syntax (and example):  
+```
+union MultiInteger =    // MultiInteger is the name of the union.
+    byte,               // Supported types can be declared like so.
+    sbyte,
+    short,
+    ushort,
+    int,
+    uint,
+    least32,
+    uleast32,
+    long,
+    ulong,
+    octa,
+    uocta;
+```
+## Packed Structures
+Packed structures can be used in Modern.  
+Syntax (and example):  
+pstruct PackedStruct =  // PackedStruct is the name of the structure.
+    first -> octa,      // Padding has to be manually done using integers or by using compiler
+                        //features.
+    second -> uint;
