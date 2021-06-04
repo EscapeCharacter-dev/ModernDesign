@@ -13,7 +13,7 @@ Multiplies two numbers. Syntax:
 ``val1 * val2``
 ### Division & Remainder
 Divides two numbers. Syntax (get the quotient):  
-``val1 / val2``
+``val1 / val2``  
 Syntax to get the remainder:  
 ``val1 % val2``
 ## Unary operators
@@ -65,3 +65,86 @@ Checks if two values are true (not equal to 0). Syntax:
 ### Or
 Checks if one of two values is true (not equal to 0). Syntax:  
 ``val1 || val2``
+## Bitwise binary operators
+These are the bitwise binary operators.
+### Binary left shift
+Shifts all bits to the left. Syntax:  
+``val1 << val2``
+### Binary right shift
+Shifts all bits to the right. Syntax:  
+``val1 >> val2``
+### Bitwise And
+Performs a bitwise and to two values. Syntax:  
+``val1 & val2``
+### Bitwise Xor
+Performs a bitwise xor to two values. Syntax:  
+``val1 ^ val2``
+### Bitwise Or
+Performs a bitwise or to two values. Syntax:  
+``val1 | val2``
+## Assignment Operators
+These are the assignment operators.
+### Direct Assignment
+Assigns a value/data types (see MoreOperators.md) to a variable. Syntax:  
+``val1 = val2``
+### Arithmetic Assignment
+Assigns the result of an arithmetic operation to a variable. Syntax:  
+Addition: ``val1 += val2``  
+Subtraction: ``val1 -= val2``  
+Multiplication: ``val1 *= val2``  
+Division: ``val1 /= val2``  
+Remainder: ``val1 %= val2``
+### Bitwise Assignment
+Assigns the result of a bitwise operation to a variable. Syntax:  
+Left Shift: ``val1 <<= val2``  
+Right Shift: ``val1 >>= val2``  
+Bitwise And: ``val1 &= val2``  
+Bitwise Xor: ``val1 ^= val2``  
+Bitwise Or: ``val1 |= val2``
+### Logical Assignment
+Assigns the result of a logical operation to a variable. Syntax:  
+Logical And: ``val1 &&= val2``  
+Logical Or: ``val1 ||= val2``  
+The other operators are not supported (for this version.)
+## Conditional Operator
+Assigns a value depending on a condition. Syntax:  
+``condition ? val1_if_true : val2_if_false``
+## Cast Operator
+Casts a value to another type. These types must be compatible. Syntax:  
+``to_cast => type``  
+For unions:  
+``union => type``  
+``union = value => type``
+## Pointer Operators
+These are the pointer operators.
+### Address of
+Gets the address of a variable. Syntax:  
+``@variable``
+### Value of
+Gets the value at the address. Can cause undefined behaviour. Syntax:  
+``$pointer``
+## Access Operators
+These are the operators used to access members of a data type.
+### Direct Access
+Gets or sets the value directly of a data type (no pointers). Syntax:  
+``data.member``
+### Pointer Access
+Gets or sets the value of a data type represented as a pointer. Syntax:  
+``data->member``
+## Parenthesized Expressions
+Parenthesises can be used to enforce the priority of an operator. Syntax:  
+``(expression)``
+## Array Access Operator
+Gets a value at an index in an array. This can cause undefined behaviour. Syntax:  
+``array[index]``
+## Other Operators
+These are the other operators like ``sizeof``.
+### Sizeof
+Gets the size of a **type** in bytes. Syntax:  
+``sizeof type``
+### Lengthof
+Gets the length of a fixed sized array. This array must be declared in this context. Syntax:  
+``lengthof array``
+### Type Definition
+This special operator is used when declaring a field. Syntax:  
+``field -> type``
