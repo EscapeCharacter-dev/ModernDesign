@@ -148,8 +148,10 @@ These are the other operators like ``sizeof``.
 Gets the size of a **type** in bytes. Syntax:  
 ``sizeof type``
 ### Lengthof
-Gets the length of a fixed sized array. This array must be declared in this context. Syntax:  
-``lengthof array``
+Gets the length of a fixed sized array or a string. This array must be declared in this context. Syntax:  
+```
+lengthof array // can also be a string
+```
 ### Type Definition
 This special operator is used when declaring a field. Syntax:  
 ``field -> type``

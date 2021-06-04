@@ -89,3 +89,11 @@ fptr -> function return_type(params);
 ```
 ## Void
 ``void`` is used for functions that return nothing.
+## Strings
+Modern supports Pascal-like strings. It supports multiple string sizes (short strings, which can hold 255 characters, "normal" strings, which can hold 65'534 and long strings for 4'294'967'292).
+### Short Strings
+Short strings are called ``short_string``. They can contain up to 255 characters, as the first byte is used to figure length.
+### "Normal" Strings
+Normal strings are called ``string``. They can contain up to 65'534 characters, as the first two bytes are used for length. This is the type used for literal strings.
+### Long Strings
+Long strings are called ``long_string``. They can contain up to 4'294'967'292 characters, as the first four bytes are used for length. This type is rarely used.
