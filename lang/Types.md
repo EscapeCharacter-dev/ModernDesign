@@ -66,7 +66,9 @@ union MultiInteger =    // MultiInteger is the name of the union.
 ## Packed Structures
 Packed structures can be used in Modern.  
 Syntax (and example):  
+```
 pstruct PackedStruct =  // PackedStruct is the name of the structure.
     first -> octa,      // Padding has to be manually done using integers or by using compiler
                         //features.
     second -> uint;
+```
