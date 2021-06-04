@@ -88,4 +88,4 @@ Function Pointers can be defined like so:
 fptr -> function return_type(params);
 ```
 ## Void
-Void is used for functions that return nothing.
+``void`` is used for functions that return nothing.
