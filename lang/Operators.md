@@ -87,6 +87,9 @@ These are the assignment operators.
 ### Direct Assignment
 Assigns a value/data types (see MoreOperators.md) to a variable. Syntax:  
 ``val1 = val2``
+### Direct Code Assignment
+Assigns code to a function/symbol. Syntax:  
+``function myFunc(a -> int, b -> int) -> int : {code}``
 ### Arithmetic Assignment
 Assigns the result of an arithmetic operation to a variable. Syntax:  
 Addition: ``val1 += val2``  
