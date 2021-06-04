@@ -69,6 +69,21 @@ Syntax (and example):
 ```
 pstruct PackedStruct =  // PackedStruct is the name of the structure.
     first -> octa,      // Padding has to be manually done using integers or by using compiler
-                        //features.
+                        // features.
     second -> uint;
+```
+## Arrays
+Arrays can be defined like so:  
+```
+array -> []type;
+```  
+## Pointers
+Pointers can be defined like so:  
+```
+array -> @type;
+```
+## Function Pointers
+Function Pointers can be defined like so:  
+```
+fptr -> function return_type(params);
 ```
