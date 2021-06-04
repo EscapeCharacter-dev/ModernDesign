@@ -21,3 +21,9 @@ function MyFunction(param -> type, more_param -> type) -> result :
 
 }
 ```
+## Symbol Qualifiers
+Symbol Qualifiers change how symbols must be generated and used.
+### Public
+``public`` outputs the symbol to the module and makes it available to all.
+### Clang
+``clang`` changes how functions work to match C functions, so that you can compile your code into an object file usable by other C-compatible languages.
