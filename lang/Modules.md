@@ -32,4 +32,6 @@ Modules are like static objects, but they support all platforms and dependencies
 In your code, you can include a module like so:  
 ```
 using "ModuleName";
-```  
+```
+## Turning them alive
+Once you have built your Modern program, you will get a module. You can assemble this module using your compiler or toolchain.
