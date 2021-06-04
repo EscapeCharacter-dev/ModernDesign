@@ -119,7 +119,9 @@ For unions:
 These are the pointer operators.
 ### Address of
 Gets the address of a variable. Syntax:  
-``@variable``
+``@variable``  
+Note: To get the address of a function pointer, use:  
+``@function_name``
 ### Value of
 Gets the value at the address. Can cause undefined behaviour. Syntax:  
 ``$pointer``
