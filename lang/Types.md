@@ -97,5 +97,7 @@ Short strings are called ``short_string``. They can contain up to 255 characters
 Normal strings are called ``string``. They can contain up to 65'534 characters, as the first two bytes are used for length. This is the type used for literal strings.
 ### Long Strings
 Long strings are called ``long_string``. They can contain up to 4'294'967'292 characters, as the first four bytes are used for length. This type is rarely used.
+### Octa Strings
+Octa strings are called `octa_string`. They can contain a **lot** of characters (64-bit limit), as the first eight bytes are used for length. This type should only be used in extreme cases.
 ### C strings
 C strings are called `cstring`. These strings can contain an unlimited amount of characters, but the string must end with a zero.
