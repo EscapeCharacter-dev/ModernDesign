@@ -3,9 +3,9 @@ This file is about Modern Types.
 ## Integer Types
 Modern supports 8-bit, 16-bit, 32-bit, 64-bit and 128-bit integers.
 ### 8-bit Integer
-A 8-bit Integer is called a ``char`` or ``byte`` (both are valid and can be mixed).  
-By default, a ``char`` or ``byte`` is unsigned, but it can be defined as signed using  
-``schar`` and ``sbyte``.
+A 8-bit Integer is called a ``byte``.  
+By default, a ``byte`` is unsigned, but it can be defined as signed using  
+``sbyte``.
 ### 16-bit Integer
 A 16-bit Integer is called a ``short``. This type is signed by default.  
 To make it unsigned, use ``ushort``.
@@ -26,7 +26,7 @@ Modern supports 16-bit, 32-bit, 64-bit, 80-bit and 128-bit floating point number
 ### 16-bit Floating Point Number
 A 16-bit floating point number is called a ``half``.
 ### 32-bit Floating Point Number
-A 32-bit floating point number is called a ``float`` or ``single`` (both can be mixed).
+A 32-bit floating point number is called a ``single``.
 ### 64-bit Floating Point Number
 A 64-bit floating point number is called a ``double``.
 ### 80-bit Floating Point Number
@@ -34,8 +34,8 @@ A 80-bit floating point number is called a ``extended``.
 ### 128-bit Floating Point Number
 A 128-bit floating point number is called a ``quad``.
 ## Booleans
-Booleans are called `bool` or `boolean` (both can be mixed).  
-Under the hood, they are the same size as an `int` for performance reasons.
+Booleans are called `bool`.  
+Under the hood, booleans are the same size as an `int` for performance reasons.
 ## Structures
 Structures can be used in Modern.  
 Syntax (and example):  
