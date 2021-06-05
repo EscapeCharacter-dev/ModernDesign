@@ -155,3 +155,9 @@ lengthof array // can also be a string
 ### Type Definition
 This special operator is used when declaring a field. Syntax:  
 ``field -> type``
+### Goto
+`goto` allows to jump somewhere in memory. Syntax:  
+`goto @label1`
+### Labels
+A `label` is a **private** name for an address to jump to code. Syntax:  
+`label MyFirstLabel; // you cannot add code to this statement`
