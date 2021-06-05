@@ -22,7 +22,7 @@ Modern Modules are libraries or programs. They are XML files. Sample structure:
     </Code>
     <Dependencies>
         <!--> Here lies a list of other modules required by this one. <-->
-        <Module dependency="true" name="ModernSDK" version="_latest"></Module>
+        <Dependency name="ModernSDK" version="_latest"></Dependency>
     </Dependencies>
 </Module>
 ```  
