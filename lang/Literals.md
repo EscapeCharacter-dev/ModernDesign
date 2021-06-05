@@ -51,3 +51,8 @@ Long string literals can be used like so:
 ```
 L"The quick fox jumps over the lazy dog."
 ```
+### C strings
+C strings are supported. Syntax:  
+```
+C"The quick fox jumps over the lazy dog."
+```
