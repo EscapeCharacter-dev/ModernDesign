@@ -99,3 +99,13 @@ foreachm (element -> @type in array) : // foreachm means foreach modifiable.
     // code goes here.
 }
 ```
+## Other Statements
+They are a few other statements supported by Modern.
+### Disable optimization
+You can't disable optimization using the `nooptz` keyword. Syntax:  
+```
+nooptz function Add(a -> int, b -> int) -> int :
+{
+    return a + b;
+}
+```
