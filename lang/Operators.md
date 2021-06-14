@@ -104,11 +104,6 @@ Right Shift: ``val1 >>= val2``
 Bitwise And: ``val1 &= val2``  
 Bitwise Xor: ``val1 ^= val2``  
 Bitwise Or: ``val1 |= val2``
-### Logical Assignment
-Assigns the result of a logical operation to a variable. Syntax:  
-Logical And: ``val1 &&= val2``  
-Logical Or: ``val1 ||= val2``  
-The other operators are not supported (for this version.)
 ## Conditional Operator
 Assigns a value depending on a condition. Syntax:  
 ``condition ? val1_if_true : val2_if_false``
