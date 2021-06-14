@@ -102,10 +102,19 @@ foreachm (element -> @type in array) : // foreachm means foreach modifiable.
 ## Other Statements
 They are a few other statements supported by Modern.
 ### Disable optimization
-You can't disable optimization using the `nooptz` keyword. Syntax:  
+You can disable optimization using the `nooptz` keyword. Syntax:  
 ```
 nooptz function Add(a -> int, b -> int) -> int :
 {
     return a + b;
 }
 ```
+### "Managed" Code
+You can make sure your pointers are freed with the `managed` keyword. Syntax:  
+```
+managed (intPtr -> @int = Malloc(sizeof int)) :
+{
+    // code that uses the pointer here
+}   // the pointer gets freed here
+```  
+Note: The `managed` keyword requires the `_managed_free(size)` to be declared.
