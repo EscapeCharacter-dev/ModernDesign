@@ -82,5 +82,6 @@ fptr -> function return_type(params);
 ```
 ## Void
 ``void`` is used for functions that return nothing.
-## C strings
-C strings are called `cstring`. These strings can contain an unlimited amount of characters, but the string must end with a zero.
+## Strings
+Strings in Modern are C strings. You can declare one using the keyword `string`. This allows you to use multiple 
+string manipulation keywords, backed by low-level functions.
