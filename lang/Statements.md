@@ -4,7 +4,7 @@ This file is about statements and code flow.
 `if` allows to execute code depending on a condition.  
 Syntax:  
 ```
-if (condition) :
+if (condition)
 {
     // code here
 }
@@ -14,11 +14,11 @@ if (condition) :
 `else if` can also be used to check additional conditions.  
 Syntax:  
 ```
-if (condition1) :
+if (condition1)
 {
     // if true
 }
-else if (condition2) :
+else if (condition2)
 {
     // if condition2 is true, these can be stacked
 }
@@ -63,7 +63,7 @@ Special Keywords:
 ### While
 `while` checks a condition, then, if true, executes code. Syntax:  
 ```
-while (condition) :
+while (condition)
 {
     // code here
 }
@@ -71,7 +71,7 @@ while (condition) :
 ### Do ... While
 `do` executes code, then checks a condition and if false, breaks out of the loop. Syntax:  
 ```
-do :
+do
 {
     // code goes here
 } while (condition);
@@ -79,7 +79,7 @@ do :
 ### For
 `for` executes a statement, the *initialization statement*. Then it checks a condition, and if it is met, it executes code and then executes another statement, the *incrementation*. Example:  
 ```
-for (var i -> int = 0; i < 300; i++) :
+for (var i -> int = 0; i < 300; i++)
 {
     // executes code until i reaches 300, iterating over this code 300 times.
 }
@@ -87,14 +87,14 @@ for (var i -> int = 0; i < 300; i++) :
 ### Foreach
 `foreach` iterates over an array, executing code at each iteration. They can forbid or allow the modification of the element in the array. Syntax (readonly):  
 ```
-foreach (element -> type in array) :
+foreach (element -> type in array)
 {
     // code here, element can be read from, writing to it will not change the contents of the array.
 }
 ```  
 Syntax (modification allowed):  
 ```
-foreachm (element -> @type in array) : // foreachm means foreach modifiable.
+foreachm (element -> @type in array) // foreachm means foreach modifiable.
 {
     // code goes here.
 }
@@ -112,7 +112,7 @@ nooptz function Add(a -> int, b -> int) -> int :
 ### "Managed" Code
 You can make sure your pointers are freed with the `managed` keyword. Syntax:  
 ```
-managed (intPtr -> @int = Malloc(sizeof int)) :
+managed (intPtr -> @int = Malloc(sizeof int))
 {
     // code that uses the pointer here
 }   // the pointer gets freed here
