@@ -18,9 +18,6 @@ extended up to 32-bit.
 ### 64-bit Integer
 A 64-bit Integer is called a ``long``. This type is signed by default.  
 To make it unsigned, use ``ulong``.
-### 128-bit Integer
-A 128-bit Integer is called a ``octa``. This type is signed by default.
-To make it unsigned, use ``uocta``.
 ## Floating Types
 Modern supports 16-bit, 32-bit, 64-bit, 80-bit and 128-bit floating point numbers.
 ### 16-bit Floating Point Number
@@ -59,9 +56,7 @@ union MultiInteger =    // MultiInteger is the name of the union.
     least32,
     uleast32,
     long,
-    ulong,
-    octa,
-    uocta;
+    ulong;
 ```
 ## Packed Structures
 Packed structures can be used in Modern.  
