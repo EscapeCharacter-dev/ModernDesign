@@ -8,7 +8,8 @@ if (condition)
 {
     // code here
 }
-```
+```  
+Note: If the condition is *always* constant and the `const` keyword is put just after the `if` keyword, the condition will get resolved at compile-time, meaning that no dead code will get produced.
 ### Else and Else If
 `else` can be used to execute code if the condition in the `if` statement failed.  
 `else if` can also be used to check additional conditions.  

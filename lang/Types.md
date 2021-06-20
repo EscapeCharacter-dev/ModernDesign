@@ -36,9 +36,9 @@ Structures can be used in Modern.
 Syntax (and example):  
 ```
 struct Point3D =    // Point3D is the name of the structure.
-    X -> single,    // 32-bit floating point numbers are perfect for this case.
-    Y -> single,
-    Z -> single;
+    single X,    // 32-bit floating point numbers are perfect for this case.
+    single Y,
+    single Z;
 ```
 ## Unions
 Unions can be used in Modern.
@@ -61,27 +61,51 @@ Packed structures can be used in Modern.
 Syntax (and example):  
 ```
 pstruct PackedStruct =  // PackedStruct is the name of the structure.
-    first -> octa,      // Padding has to be manually done using integers or by using compiler
+    int first,      // Padding has to be manually done using integers or by using compiler
                         // features.
-    second -> uint;
+    uint second;
 ```
 ## Arrays
 Arrays can be defined like so:  
 ```
-array -> []type;
+[]type array;
 ```  
 ## Pointers
 Pointers can be defined like so:  
 ```
-array -> @type;
+@type array;
 ```
 ## Function Pointers
 Function Pointers can be defined like so:  
 ```
-fptr -> function return_type(params);
+function(params) return_type fptr;
 ```
 ## Void
 ``void`` is used for functions that return nothing.
 ## Strings
 Strings in Modern are C strings. You can declare one using the keyword `string`. This allows you to use multiple 
 string manipulation keywords, backed by low-level functions.
+## References
+References are "pointers" to other symbols. They can only be used as function parameters. They can be declared like so:  
+```
+ref int myIntReference
+```  
+You can pass a reference to a variable using the `to` keyword:  
+```
+my_function(to my_variable);
+```
+## Compile-time generics
+Modern supports compile-time generics. They are declared like any function parameter:  
+```
+type generic_type
+```  
+You can also create generic structures:  
+```
+struct my_struct(type generic) =
+    of generic foo;
+```  
+Which can be used like:  
+```
+var my_struct(int) my_structure_with_int;
+```  
+The `of` keyword allows you to create variables that use a generic type. All of the types are getting resolved at compile-time, so `sizeof(some_generic_type)` will always return constant value.
