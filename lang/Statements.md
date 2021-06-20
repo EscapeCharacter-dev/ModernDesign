@@ -100,14 +100,3 @@ foreachm (type @element in array) // foreachm means foreach modifiable.
     // code goes here.
 }
 ```
-## Other Statements
-They are a few other statements supported by Modern.
-### "Managed" Code
-You can make sure your pointers are freed with the `managed` keyword. Syntax:  
-```
-managed (int @intPtr = Malloc(sizeof int))
-{
-    // code that uses the pointer here
-}   // the pointer gets freed here
-```  
-Note: The `managed` keyword requires the `_managed_free(size)` to be declared.

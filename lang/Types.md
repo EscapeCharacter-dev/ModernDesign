@@ -38,7 +38,15 @@ Syntax (and example):
 struct Point3D =    // Point3D is the name of the structure.
     single X,    // 32-bit floating point numbers are perfect for this case.
     single Y,
-    single Z;
+    single Z,
+    new :        // ctor
+    {
+
+    },
+    del :       // dtor
+    {
+
+    };
 ```
 ## Unions
 Unions can be used in Modern.
