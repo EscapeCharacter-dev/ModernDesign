@@ -147,9 +147,6 @@ Gets the length of a fixed sized array or a string. This array must be declared 
 ```
 lengthof array // can also be a string
 ```
-### Type Definition
-This special operator is used when declaring a field. Syntax:  
-``field -> type``
 ### Goto
 `goto` allows to jump somewhere in memory. Syntax:  
 `goto @label1`

@@ -79,7 +79,7 @@ do
 ### For
 `for` executes a statement, the *initialization statement*. Then it checks a condition, and if it is met, it executes code and then executes another statement, the *incrementation*. Example:  
 ```
-for (var i -> int = 0; i < 300; i++)
+for (var int i = 0; i < 300; i++)
 {
     // executes code until i reaches 300, iterating over this code 300 times.
 }
@@ -87,32 +87,24 @@ for (var i -> int = 0; i < 300; i++)
 ### Foreach
 `foreach` iterates over an array, executing code at each iteration. They can forbid or allow the modification of the element in the array. Syntax (readonly):  
 ```
-foreach (element -> type in array)
+foreach (type element in array)
 {
     // code here, element can be read from, writing to it will not change the contents of the array.
 }
 ```  
 Syntax (modification allowed):  
 ```
-foreachm (element -> @type in array) // foreachm means foreach modifiable.
+foreachm (type @element in array) // foreachm means foreach modifiable.
 {
     // code goes here.
 }
 ```
 ## Other Statements
 They are a few other statements supported by Modern.
-### Disable optimization
-You can disable optimization using the `nooptz` keyword. Syntax:  
-```
-nooptz function Add(a -> int, b -> int) -> int :
-{
-    return a + b;
-}
-```
 ### "Managed" Code
 You can make sure your pointers are freed with the `managed` keyword. Syntax:  
 ```
-managed (intPtr -> @int = Malloc(sizeof int))
+managed (int @intPtr = Malloc(sizeof int))
 {
     // code that uses the pointer here
 }   // the pointer gets freed here
