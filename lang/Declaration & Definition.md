@@ -16,7 +16,7 @@ Constants must have values assigned.
 ## Functions
 Function definition can be done in Modern like so:  
 ```
-function result MyFunction(type param, type more_param) :
+function result MyFunction(type param, type more_param)
 { // code here
 
 }
