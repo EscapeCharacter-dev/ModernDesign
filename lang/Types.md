@@ -28,6 +28,8 @@ A 64-bit floating point number is called a ``double``.
 A 80-bit floating point number is called a ``extended``.
 ### 128-bit Floating Point Number
 A 128-bit floating point number is called a ``quad``.
+### Arbitrary-sized Integers and Floats
+You can define an arbitrary integer with `integer(size_in_bytes)` or `floating(size_in_bytes)`.
 ## Booleans
 Booleans are called `bool`.  
 Under the hood, booleans are the same size as an `int` for performance reasons.
@@ -103,13 +105,13 @@ You can pass a reference to a variable using the `to` keyword:
 my_function(to my_variable);
 ```
 ## Compile-time generics
-Modern supports compile-time generics. They are declared like any function parameter:  
+Modern supports compile-time generics. They are declared just before function parameters:   
 ```
-type generic_type
+some_function<my_generic>();
 ```  
 You can also create generic structures:  
 ```
-struct my_struct(type generic) =
+struct my_struct<generic> =
     of generic foo;
 ```  
 Which can be used like:  
