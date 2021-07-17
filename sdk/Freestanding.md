@@ -53,4 +53,6 @@ Signature:
 function void @Realloc<T>(void @ptr, ulong N)
 ```  
 Description:  
-Resizes a memory block to fit N objects of types T. Keeps the data previously allocated. The block's address might have changed (typically caused by `Modern::Move`). See `Modern::RawRealloc` for raw memory allocations.
+Resizes a memory block to fit N objects of types T. Keeps the data previously allocated. The block's address might have changed (typically caused by `Modern::Move`). See `Modern::RawRealloc` for raw memory allocations.  
+Returns:  
+A pointer to the new memory block.
