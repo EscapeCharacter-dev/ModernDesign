@@ -24,8 +24,6 @@ Modern supports 16-bit, 32-bit and 64-bit.
 A 32-bit floating point number is called a ``single``.
 ### 64-bit Floating Point Number
 A 64-bit floating point number is called a ``double``.
-### Arbitrary-sized Integers and Floats
-You can define an arbitrary integer with `integer(size_in_bytes)` or `floating(size_in_bytes)`.
 ## Booleans
 Booleans are called `bool`.  
 Under the hood, booleans are the same size as an `int` for performance reasons.
@@ -36,15 +34,7 @@ Syntax (and example):
 struct Point3D =    // Point3D is the name of the structure.
     single X,    // 32-bit floating point numbers are perfect for this case.
     single Y,
-    single Z,
-    new :        // ctor
-    {
-
-    },
-    del :       // dtor
-    {
-
-    };
+    single Z;
 ```
 ## Unions
 Unions can be used in Modern.
@@ -112,6 +102,6 @@ struct my_struct<generic> =
 ```  
 Which can be used like:  
 ```
-var my_struct(int) my_structure_with_int;
+var my_struct<int> my_structure_with_int;
 ```  
 The `of` keyword allows you to create variables that use a generic type. All of the types are getting resolved at compile-time, so `sizeof(some_generic_type)` will always return constant value.
