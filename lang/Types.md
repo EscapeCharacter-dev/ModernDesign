@@ -1,7 +1,7 @@
 # Types
 This file is about Modern Types.
 ## Integer Types
-Modern supports 8-bit, 16-bit, 32-bit, 64-bit and 128-bit integers.
+Modern supports 8-bit, 16-bit, 32-bit and 64-bit.
 ### 8-bit Integer
 A 8-bit Integer is called a ``byte``.  
 By default, a ``byte`` is unsigned, but it can be defined as signed using  
@@ -19,15 +19,11 @@ extended up to 32-bit.
 A 64-bit Integer is called a ``long``. This type is signed by default.  
 To make it unsigned, use ``ulong``.
 ## Floating Types
-Modern supports 16-bit, 32-bit, 64-bit, 80-bit and 128-bit floating point numbers.
+Modern supports 16-bit, 32-bit and 64-bit.
 ### 32-bit Floating Point Number
 A 32-bit floating point number is called a ``single``.
 ### 64-bit Floating Point Number
 A 64-bit floating point number is called a ``double``.
-### 80-bit Floating Point Number
-A 80-bit floating point number is called a ``extended``.
-### 128-bit Floating Point Number
-A 128-bit floating point number is called a ``quad``.
 ### Arbitrary-sized Integers and Floats
 You can define an arbitrary integer with `integer(size_in_bytes)` or `floating(size_in_bytes)`.
 ## Booleans
