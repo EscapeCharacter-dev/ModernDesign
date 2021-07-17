@@ -18,6 +18,8 @@ extended up to 32-bit.
 ### 64-bit Integer
 A 64-bit Integer is called a ``long``. This type is signed by default.  
 To make it unsigned, use ``ulong``.
+### Word (2021.09)
+`word` is an integer of the same word size as the one that the compiler is targetting (64-bit on x86-64.)
 ## Floating Types
 Modern supports 16-bit, 32-bit and 64-bit.
 ### 32-bit Floating Point Number

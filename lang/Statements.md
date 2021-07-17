@@ -55,7 +55,21 @@ switch [value]
 // labels here
 }
 ```  
-Unchecked switch statements are slightly faster (it omits bound checking.)
+Unchecked switch statements are slightly faster (it omits bound checking.)  
+### Start and End (2021.09)
+`start` and `end` can be used to define *sub-switches*. Syntax:  
+```
+switch (value)
+{
+start:
+    // common code for 0, 1, 2 (executed before)
+case 0:
+case 1:
+case 2:
+end:
+    // common code for 0, 1, 2 (executed after)
+}
+```
 ## Loops
 There is a couple of switch statement variants avaiable in Modern.  
 Special Keywords:  
