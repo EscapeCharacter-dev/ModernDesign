@@ -27,6 +27,13 @@ Symbol Qualifiers change how symbols must be generated and used.
 ``public`` outputs the symbol to the module and makes it available to all.
 ### Clang
 ``clang`` changes how functions work to match C functions, so that you can compile your code into an object file usable by other C-compatible languages.
+### Register (2021.09)
+``register`` specifies that this local variable/function argument must be stored in a register.
+### Return Register (2021.09)
+``return register`` specifies that this local variable/function argument must be stored in the accumulator.  
+There can only be one function ``return register`` function argument.
+### Static (2021.09)
+``static`` statically allocates a variable. It will not get allocated on the stack, but rather in the binary.
 ## Arrays (and strings)
 ### Specify array size
 You can specify the size of an array using a variable or a literal constant. Syntax:  
